@@ -1,0 +1,71 @@
+/* Please scroll down to the start of your exercise! */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+section {
+  background-color: lemonchiffon;
+  display: grid;
+  place-items: center;
+}
+
+.skyblue {
+  background-color: skyblue;
+}
+
+button {
+  background-color: white;
+  padding: 8px 25px;
+}
+
+button {
+  font-family: "Pacifico", cursive;
+  cursor: pointer;
+}
+
+/* Your exercise starts here */
+
+/* Add your CSS styles below this line. Feel free to replace the comments with your code. Make sure not to put your code into the comments, because then nothing will happen. */
+
+.button1 {
+  border-radius: 10px;
+  border-color: #ffb3d3;
+  width: 300px;
+}
+
+.button2 {
+  color: #fff;
+  background-color: #ffb3d3;
+  font-weight: bold;
+}
+
+.button2:hover {
+  background-color: #b38699;
+}
+.button3 {
+  color: #fff;
+  background: rgb(255, 179, 211);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 179, 211, 1) 7%,
+    rgba(252, 177, 212, 1) 10%,
+    rgba(216, 155, 227, 1) 49%,
+    rgba(0, 255, 252, 1) 100%
+  );
+}
+
+.button4 {
+  /*Style me! Can you add a shadow to this button? Maybe play around with the shadow properties, as well? You can even color the shadow, make it bigger or smaller, ... */
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+/* Feel free to play around with other properties, as well. */
