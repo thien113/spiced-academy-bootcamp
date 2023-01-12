@@ -43,11 +43,12 @@ button {
 .button2 {
   color: #fff;
   background-color: #ffb3d3;
+  font-size: large;
   font-weight: bold;
 }
 
 .button2:hover {
-  background-color: #b38699;
+  background-color: #ac0048;
 }
 .button3 {
   color: #fff;
@@ -58,6 +59,16 @@ button {
     rgba(252, 177, 212, 1) 10%,
     rgba(216, 155, 227, 1) 49%,
     rgba(0, 255, 252, 1) 100%
+  );
+}
+.button3:hover {
+  background: rgba(0, 255, 252, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 252, 1) 25%,
+    rgba(216, 155, 227, 1) 30%,
+    rgba(252, 177, 212, 1) 79%,
+    rgba(255, 179, 211, 1) 100%
   );
 }
 
