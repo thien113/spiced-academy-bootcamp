@@ -1,3 +1,38 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background: rgb(216, 155, 227);
+  background: linear-gradient(
+    90deg,
+    rgba(216, 155, 227, 1) 50%,
+    rgba(0, 255, 252, 1) 100%
+  );
+}
+article {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+img {
+  box-shadow: 0 4px 8px 0;
+}
+
+button {
+  width: 200px;
+  background-color: aqua;
+  color: #fff;
+}
+p {
+  font-weight: bold;
+}
