@@ -106,9 +106,12 @@ li:before {
 
 /* profile page */
 article {
+  background-color: var(--white-color);
+  border-radius: 10px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding: 15px;
 }
 
 article > img {
@@ -128,7 +131,7 @@ h3 {
   gap: 10px;
 }
 
-label {
+.label-group > label {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -142,4 +145,56 @@ span {
   font-weight: bold;
   font-size: larger;
   align-self: center;
+}
+
+/*Dark Mode*/
+.dark-mode {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.switch {
+  position: relative;
+  width: 70px;
+  height: 37px;
+  display: inline-block;
+}
+
+.switch span {
+  position: absolute;
+  background-color: var(--main-color);
+  border-radius: 17px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background-color 0.4s;
+}
+
+.switch span::before {
+  background-color: white;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  height: 26px;
+  width: 26px;
+}
+
+input:checked + span {
+  background-color: var(--accent-color);
+  transition: 0.4;
+}
+
+input:checked + span::before {
+  transform: translateX(30px);
+  transition: 0.4s;
+}
+
+.switch input {
+  display: none;
 }
