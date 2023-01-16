@@ -38,9 +38,6 @@ nav {
     rgba(255, 25, 194, 1) 75%
   );
 }
-nav > a:hover {
-  background-color: var(--main-color);
-}
 img {
   height: 40px;
 }
@@ -97,6 +94,7 @@ ul {
   gap: 5px;
 }
 li {
+  font-size: 15px;
   border: 1px solid var(--accent-color);
   background-color: #ffa5e7;
   border-radius: 2px;
