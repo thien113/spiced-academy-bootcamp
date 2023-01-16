@@ -74,3 +74,43 @@ ul {
 li:before {
   content: "\0023";
 }
+
+/* profile page */
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+article > img {
+  height: 100px;
+}
+
+p,
+h3 {
+  padding: 15px;
+}
+
+.label-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid;
+  border-radius: 1px;
+  width: 150px;
+  padding: 5px;
+}
+
+span {
+  font-weight: bold;
+  font-size: larger;
+  align-self: center;
+}
