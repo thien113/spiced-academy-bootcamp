@@ -2,3 +2,62 @@
   box-sizing: border-box;
   margin: 0;
 }
+:root {
+  --main-color: #00ffff;
+  --accent-color: #ff19c2;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 10px;
+}
+.navbar {
+}
+h1 {
+  color: black;
+  font-size: 70px;
+  text-align: center;
+  margin: 20px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 80%;
+  height: 200px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 5px;
+  align-items: center;
+}
+h2 {
+  text-align: center;
+  margin: 30px;
+}
+img {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  height: 40px;
+}
+button {
+  margin: 10px;
+  width: 40%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+ul {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  gap: 1px;
+}
+li:before {
+  content: "\0023";
+}
