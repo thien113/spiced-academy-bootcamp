@@ -14,7 +14,7 @@ main {
   gap: 25px;
 }
 nav {
-  position: fixed;
+  position: sticky;
   z-index: 1;
   bottom: 0;
   display: flex;
