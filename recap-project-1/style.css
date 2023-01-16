@@ -108,6 +108,7 @@ li:before {
 article {
   background-color: var(--white-color);
   border-radius: 10px;
+  border: 3px solid black;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -115,12 +116,13 @@ article {
 }
 
 article > img {
-  height: 100px;
+  height: 200px;
 }
 
 p,
 h3 {
-  padding: 15px;
+  margin: 5px;
+  padding: 5px;
 }
 
 .label-group {
