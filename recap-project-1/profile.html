@@ -11,14 +11,14 @@
     <main>
       <h1>Quizz App</h1>
       <article>
-        <img src="profile.svg" alt="" />
+        <img src="profile.svg" alt="profile" />
         <h2>John Doe</h1>
             <h3>About me</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 At volutpat diam ut venenatis tellus in metus. Sem fringilla ut morbi tincidunt augue interdum velit.</p>
             <div class="label-group">
-                <label for="counter-question"><img src="question.svg" alt=""><span>12</span></label>
-                <label for="counter-bookmark"><img src="bookmark.svg"><span>4</span></label>
+                <label for="counter-question"><img src="question.svg" alt="question icon"><span>12</span></label>
+                <label for="counter-bookmark"><img src="bookmark.svg" alt="bookmark icon"><span>4</span></label>
             </div>
             <div class="dark-mode">
                 <h3>Dark Mode</h3>
@@ -26,9 +26,13 @@
       </article>
     </main>
     <nav>
-      <a href="index.html"><img src="home.svg" /></a>
-      <a href="bookmark.html"><img src="bookmark.svg" /></a>
-      <a href="profile.html"><img src="profile.svg" alt="" /></a>
+      <a aria-label="open home tab" href="index.html"><img src="home.svg" alt="home icon" /></a>
+      <a aria-label="open bookmark tab" alt="bookmark icon" href="bookmark.html"
+        ><img src="bookmark.svg"
+      /></a>
+      <a aria-label="open profile tab" alt="profile icon" href="profile.html"
+        ><img src="profile.svg" alt=""
+      /></a>
     </nav>
   </body>
 </html>

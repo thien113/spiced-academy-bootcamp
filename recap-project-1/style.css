@@ -87,7 +87,7 @@ button:hover {
   -webkit-transition: all 0.4s ease;
 }
 ul {
-  color: var(--accent-color);
+  color: black;
   position: absolute;
   bottom: 5px;
   left: 0;
@@ -95,6 +95,12 @@ ul {
   flex-flow: row wrap;
   list-style-type: none;
   gap: 5px;
+}
+li {
+  border: 1px solid var(--accent-color);
+  background-color: #ffa5e7;
+  border-radius: 2px;
+  padding: 2px;
 }
 li:before {
   content: "\0023";
