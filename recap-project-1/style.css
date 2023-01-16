@@ -5,6 +5,8 @@
 :root {
   --main-color: #00ffff;
   --accent-color: #ff19c2;
+  --background-color: #ffda19;
+  --white-color: white;
 }
 main {
   display: flex;
@@ -12,6 +14,12 @@ main {
   justify-content: center;
   align-items: center;
   gap: 25px;
+  background: rgb(0, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 255, 1) 28%,
+    rgba(255, 25, 194, 1) 75%
+  );
 }
 nav {
   position: sticky;
@@ -23,7 +31,15 @@ nav {
   justify-content: space-around;
   width: 100%;
   height: 90px;
-  background-color: white;
+  background: rgb(0, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 255, 1) 28%,
+    rgba(255, 25, 194, 1) 75%
+  );
+}
+nav > a:hover {
+  background-color: var(--main-color);
 }
 img {
   height: 40px;
@@ -35,12 +51,13 @@ h1 {
   margin: 20px;
 }
 section {
+  background-color: var(--white-color);
   display: flex;
   flex-direction: column;
   position: relative;
   width: 80%;
   height: 200px;
-  border: 1px solid;
+  border: 3px solid;
   border-radius: 10px;
   padding: 5px;
   align-items: center;
@@ -57,19 +74,27 @@ section > img {
   height: 40px;
 }
 button {
+  background-color: var(--white-color);
+  border-color: var(--accent-color);
   margin: 10px;
   width: 40%;
-  border-radius: 10px;
+  border-radius: 1px;
   cursor: pointer;
 }
+button:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  color: var(--white-color);
+}
 ul {
+  color: var(--accent-color);
   position: absolute;
   bottom: 5px;
   left: 0;
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
-  gap: 1px;
+  gap: 5px;
 }
 li:before {
   content: "\0023";
