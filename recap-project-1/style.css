@@ -41,6 +41,21 @@ nav {
     rgba(255, 25, 194, 1) 75%
   );
 }
+/*change nav icon when its clicked*/
+.active {
+  height: 40px;
+}
+.home.active {
+  content: url("./assets/home-white.svg");
+}
+
+.profile.active {
+  content: url("./assets/profile-white.svg");
+}
+
+.bookmark.active {
+  content: url("./assets/bookmark-2.svg");
+}
 img {
   height: 40px;
 }
@@ -51,6 +66,10 @@ h1 {
   font-weight: bolder;
   text-align: center;
   margin: 20px;
+}
+h2 {
+  text-align: center;
+  margin: 10px;
 }
 section {
   background-color: var(--white-color);
@@ -64,11 +83,6 @@ section {
   padding: 25px;
   align-items: center;
 }
-h2 {
-  text-align: center;
-  margin: 10px;
-}
-
 section > img {
   position: absolute;
   top: -15px;
@@ -107,19 +121,4 @@ li {
 }
 li:before {
   content: "\0023";
-}
-/*change nav icon when its clicked*/
-.active {
-  height: 40px;
-}
-.home.active {
-  content: url("./assets/home-white.svg");
-}
-
-.profile.active {
-  content: url("./assets/profile-white.svg");
-}
-
-.bookmark.active {
-  content: url("./assets/bookmark-2.svg");
 }
