@@ -49,13 +49,7 @@ nav li {
 /* -------------------------------------------------------- */
 
 /* 1. These styles should apply to the headline */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  outline: 2px dashed red;
+h1 {
   font-size: 2rem;
   margin: 0 2rem 0 0;
   color: #2673bb;
@@ -63,85 +57,72 @@ h6 {
 
 /* 2. These styles should apply to all links */
 a {
-  outline: 2px dashed red;
   color: #ff00e6;
 }
 
 /* 3. These styles should apply to all external links (you can use the attribute selector) */
-[target="_blank"] {
-  outline: 2px dashed red;
+a[href^="http"] {
   color: #ff8000;
 }
 
 /* 4. These styles should apply to all links in the main navigation */
-nav > ul > li > a {
-  outline: 2px dashed red;
+header nav a {
   color: #ffffff;
   text-decoration: none;
 }
 
 /* 5. These styles should apply to the main navigation link corresponding to the current page */
 .current {
-  outline: 2px dashed red;
   color: #22e781;
 }
 
 /* 6. These styles should apply to all links in the footer */
-footer > p > a {
-  outline: 2px dashed red;
+footer a {
   color: inherit;
 }
 
 /* 7. These styles should apply to all paragraphs and all lists (please use a class selector) */
 .text,
 .list {
-  outline: 2px dashed red;
   color: #2c3f3f;
 }
 
 /* 8. These styles should apply to all "notes" */
-.text-notes {
-  outline: 2px dashed red;
+.text-note {
   font-size: 0.8em;
   color: #808080;
 }
 
 /* 9. These styles should apply to the welcome text */
-.welcome-text {
-  outline: 2px dashed red;
+main p:first-of-type {
   font-size: 1.2rem;
   color: #000000;
 }
 
 /* 10. These styles should apply to the paragraph in the footer */
-footer > p {
-  outline: 2px dashed red;
+footer .text {
   color: #ffffff;
 }
 
-/* 11. These styles should apply to all lists */
-ul {
-  outline: 2px dashed red;
+/* 11. These styles should apply to all lists in the main */
+.list {
   padding: 1rem 2rem;
   background: #caced2;
 }
 
 /* 12. These styles should apply to all list items */
-li {
-  outline: 2px dashed red;
+.list > li {
   margin: 0 0 0.5rem 0;
 }
 
 /* 13. These styles should apply to all nested lists */
-ul > li > ul {
-  outline: 2px dashed red;
+.list > li > ul {
   margin: 0.5rem 0 0 0;
   background-color: #f1f1f1;
 }
 
 /* 14. These styles should apply to all list items in nested lists */
-ul > li > ul > li {
-  outline: 2px dashed red;
+.list > li > ul > li {
   margin: 0;
   color: #2673bb;
 }
