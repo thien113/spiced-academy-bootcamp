@@ -1,3 +1,5 @@
+@import url(./profile.css);
+@import url(./darkmode.css);
 * {
   box-sizing: border-box;
   margin: 0;
@@ -106,107 +108,6 @@ li {
 li:before {
   content: "\0023";
 }
-
-/* profile page */
-article {
-  background-color: var(--white-color);
-  border-radius: 10px;
-  border: 3px solid black;
-  margin: 20px;
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-}
-
-article > img {
-  height: 200px;
-}
-
-p,
-h3 {
-  margin: 5px;
-  padding: 5px;
-}
-
-.label-group {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  gap: 10px;
-}
-
-.label-group > label {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: 1px solid;
-  border-radius: 1px;
-  width: 150px;
-  padding: 5px;
-}
-
-span {
-  font-weight: bold;
-  font-size: larger;
-  align-self: center;
-}
-
-/*Dark Mode*/
-.dark-mode {
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-.switch {
-  position: relative;
-  width: 70px;
-  height: 37px;
-  display: inline-block;
-}
-
-.switch span {
-  position: absolute;
-  background-color: var(--main-color);
-  border-radius: 17px;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: background-color 0.4s;
-}
-
-.switch span::before {
-  background-color: white;
-  border-radius: 50%;
-  content: "";
-  position: absolute;
-  left: 4px;
-  bottom: 4px;
-  height: 26px;
-  width: 26px;
-}
-
-input:checked + span {
-  background-color: var(--accent-color);
-  transition: 0.4;
-}
-
-input:checked + span::before {
-  transform: translateX(30px);
-  transition: 0.4s;
-}
-
-.switch input {
-  display: none;
-}
-
 /*change nav icon when its clicked*/
 .active {
   height: 40px;
