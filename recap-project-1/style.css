@@ -213,15 +213,12 @@ input:checked + span::before {
 }
 .home.active {
   content: url("./assets/home-white.svg");
-  background-color: #ff19c2;
 }
 
 .profile.active {
   content: url("./assets/profile-white.svg");
-  background-color: #ff19c2;
 }
 
 .bookmark.active {
   content: url("./assets/bookmark-2.svg");
-  background-color: #ff19c2;
 }
