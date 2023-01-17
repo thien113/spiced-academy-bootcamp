@@ -1,0 +1,27 @@
+nav {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: auto;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  background: var(--background-gradient);
+}
+/*change nav icon when its clicked*/
+.active {
+  height: 40px;
+}
+.home.active {
+  content: url("../assets/home-white.svg");
+}
+
+.profile.active {
+  content: url("../assets/profile-white.svg");
+}
+
+.bookmark.active {
+  content: url("../assets/bookmark-2.svg");
+}

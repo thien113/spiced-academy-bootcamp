@@ -1,0 +1,42 @@
+section {
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 80%;
+  height: 250px;
+  border: var(--borders);
+  border-radius: 10px;
+  padding: 25px;
+  align-items: center;
+}
+section > h2 {
+  text-align: center;
+  margin: 10px;
+}
+section > img {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  height: 40px;
+}
+section > ul {
+  color: black;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  gap: 5px;
+}
+section > ul > li {
+  font-size: 15px;
+  border: var(--borders) var(--accent-color);
+  background-color: #ffa5e7;
+  border-radius: 2px;
+  padding: 2px;
+}
+section > ul > li:before {
+  content: "\0023";
+}

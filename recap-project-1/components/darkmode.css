@@ -26,7 +26,7 @@
 }
 
 .switch span::before {
-  background-color: white;
+  background-color: var(--white-color);
   border-radius: 50%;
   content: "";
   position: absolute;
