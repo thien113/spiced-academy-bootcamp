@@ -6,10 +6,10 @@ button.addEventListener("click", () => {
   // Number(x) converts the string from the input to a number
   // Beware: input values are *always* strings!
   const age = Number(input.value);
-  if (age < 18 && age > 12) {
-    output.innerHTML = "You are a teen.";
+  if (age <= 19 && age >= 13) {
+    output.textContent = "You are a teen.";
   } else {
-    output.innerHTML = "You are NOT a teen.";
+    output.textContent = "You are NOT a teen.";
   }
 
   // Exercise:
