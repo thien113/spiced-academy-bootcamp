@@ -23,10 +23,31 @@ const display = document.querySelector('[data-js="display"]');
 
 function getGreeting() {
   // Code here
+  let timeHour = new Date().getHours();
+  console.log("Hour: " + timeHour);
+  if (timeHour >= 6 && timeHour <= 12) {
+    return "Good Morning";
+  } else if (timeHour >= 13 && timeHour <= 18) {
+    return "Good Afternoon";
+  } else if (timeHour >= 19 && timeHour <= 22) {
+    return "Good Evening";
+  } else {
+    return "Good Night";
+  }
 }
 
 function getDayColor() {
   // Code here
+  const day = new Date().getDay();
+  console.log("Day: " + day);
+  if (day == 1) {
+    return "darkgray";
+  }
+  if (day == 6 || day == 7) {
+    return "hotpink";
+  } else {
+    return "lightblue";
+  }
 }
 
 display.textContent = getGreeting();
