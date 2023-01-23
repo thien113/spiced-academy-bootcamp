@@ -22,18 +22,18 @@ const inputColor = document.querySelector('[data-js="input-color"]');
 const inputRadius = document.querySelector('[data-js="input-radius"]');
 const inputRotation = document.querySelector('[data-js="input-rotation"]');
 
-inputColor.addEventListener("change", () => {
+inputColor.addEventListener("input", () => {
   let color = inputColor.value;
   box.style.background = `hsl(${color}, 70%, 60%)`;
 });
 
-inputRadius.addEventListener("change", () => {
+inputRadius.addEventListener("input", () => {
   let radius = inputRadius.value;
   console.log(radius);
   box.style.borderRadius = `${radius}px`;
 });
 
-inputRotation.addEventListener("change", () => {
+inputRotation.addEventListener("input", () => {
   let rotation = inputRotation.value;
   box.style.transform = `rotate(${rotation}deg)`;
 });
