@@ -1,5 +1,13 @@
 /*Dark Mode*/
 .dark-mode {
+  background: rgb(2, 180, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 180, 180, 1) 28%,
+    rgba(194, 19, 147, 1) 75%
+  );
+}
+.dark-mode-button {
   margin: 10px;
   display: flex;
   flex-direction: row;

@@ -1,9 +1,9 @@
-@import url(./components/button.css);
-@import url(./components/card.css);
-@import url(./components/navigation.css);
-@import url(./components/darkmode.css);
-@import url(./components/profile.css);
-@import url(./components/form.css);
+@import url(./components/css/button.css);
+@import url(./components/css/card.css);
+@import url(./components/css/navigation.css);
+@import url(./components/css/darkmode.css);
+@import url(./components/css/profile.css);
+@import url(./components/css/form.css);
 * {
   box-sizing: border-box;
   margin: 0;

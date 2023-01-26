@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="global.css" />
+    <script src="./index.js" defer></script>
     <title>Quiz App</title>
   </head>
-  <body>
+  <body data-js="dark-mode">
     <main>
       <h1>Quizz App</h1>
       <article>
@@ -19,9 +20,9 @@
                 <label for="counter-question"><img src="./assets/question.svg" alt="question icon"><span>12</span></label>
                 <label for="counter-bookmark"><img src="./assets/bookmark.svg" alt="bookmark icon"><span>4</span></label>
             </div>
-            <div class="dark-mode">
+            <div class="dark-mode-button">
                 <h3>Dark Mode</h3>
-                <label class="switch">
+                <label class="switch" data-js="dark-mode-button">
                     <input type="checkbox">
                     <span></span>	  
                 </label>
