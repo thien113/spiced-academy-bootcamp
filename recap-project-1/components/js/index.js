@@ -71,8 +71,6 @@ const cards = [
 window.localStorage.setItem("cards", JSON.stringify(cards));
 //get item as array of objects
 let cardsArray = JSON.parse(localStorage.getItem("cards") || "[]");
-console.log(cardsArray);
-console.log("typeof: ", typeof cardsArray);
 //queryselector
 const main = document.querySelector('[data-js="main"]');
 

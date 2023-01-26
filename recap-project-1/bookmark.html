@@ -5,44 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="global.css" />
-    <script src="./components/js/index.js" defer></script>
+    <script src="./components/js/bookmark.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body>
-    <main>
+    <main data-js="bookMarked">
       <h1>Quizz App</h1>
-      <section>
-        <img
-          src="./assets/bookmark.svg"
-          alt="bookmarked icon"
-          onmouseover="this.style.cursor='pointer'"
-          onclick="onChangeImage(this)"
-        />
-        <h2>What is the best-selling candy in the whole world?</h2>
-        <button onclick="toggleAnswer(this)">Show Answer</button>
-        <span class="hidden">Snickers</span>
-        <ul>
-          <li>trivia</li>
-          <li>chocolate</li>
-          <li>candy</li>
-        </ul>
-      </section>
-      <section>
-        <img
-          src="./assets/bookmark.svg"
-          alt="bookmarked icon"
-          onmouseover="this.style.cursor='pointer'"
-          onclick="onChangeImage(this)"
-        />
-        <h2>Was milk chocolate invented in Belgium or Switzerland?</h2>
-        <button onclick="toggleAnswer(this)">Show Answer</button>
-        <span class="hidden">Switzerland</span>
-        <ul>
-          <li>milk</li>
-          <li>candy</li>
-          <li>chocolate</li>
-        </ul>
-      </section>
     </main>
     <nav>
       <a class="home" aria-label="open home tab" href="index.html"
