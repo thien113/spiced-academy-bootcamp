@@ -1,6 +1,10 @@
 // toggle bookmark picture
+// get object image over onclick="onChangeImage(this)"
+
 function onChangeImage(objImg) {
+  // getting value from source and check value
   if (objImg.getAttribute("src") != "./assets/bookmark.svg") {
+    //setattribute src and alt
     objImg.setAttribute("src", "./assets/bookmark.svg");
     objImg.setAttribute("alt", "bookmarked");
   } else {
@@ -11,11 +15,15 @@ function onChangeImage(objImg) {
 
 // toggle Answer
 function toggleAnswer(objButton) {
+  //get next element of Button
   const spanElement = objButton.nextElementSibling;
+  //toggle class hidden
   spanElement.classList.toggle("hidden");
+  //call function that set textcontent depending on class hidden
   toggleAnswerText(objButton);
 }
 
+// toggle textcontent button
 function toggleAnswerText(objButton) {
   const spanElement = objButton.nextElementSibling;
   if (spanElement.classList.value != "hidden") {
@@ -66,5 +74,7 @@ window.onload = form.addEventListener("submit", (event) => {
   ulEl.append(liEl);
   selectionEl.append(imgEl, h2El, buttonEl, spanEl, ulEl);
   main.append(selectionEl);
+
+  //reset the form after submit
   form.reset();
 });
