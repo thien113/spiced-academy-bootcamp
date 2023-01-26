@@ -37,11 +37,10 @@ function toggleAnswerText(objButton) {
 const form = document.querySelector('[data-js="form"]');
 const main = document.querySelector('[data-js="main"]');
 
-window.onload = form.addEventListener("submit", (event) => {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
   // gives whole Data
   const formData = new FormData(event.target);
-  console.log("main?:", main);
   //gives objects with attribute
   const formDataAsObjects = Object.fromEntries(formData);
 
@@ -78,3 +77,21 @@ window.onload = form.addEventListener("submit", (event) => {
   //reset the form after submit
   form.reset();
 });
+
+// show input text length and display it
+const inputQuestion = document.querySelector('[data-js="question"]');
+const inputAnswer = document.querySelector('[data-js="answer"]');
+
+/*eventhandlerevent is always the whole form
+while event.target is the html where smth is triggered
+-> eg. inputQuestion -> inside this you add a event. everytime this event is triggered js knows in which html it happens
+-> get the html by event.target
+*/
+const leftCharacter = (event) => {
+  const input = event.target;
+  const inputLength = 150 - input.value.length;
+  const newValueCharacters = input.nextElementSibling;
+  newValueCharacters.textContent = `${inputLength} Character/s left`;
+};
+inputQuestion.addEventListener("input", leftCharacter);
+inputAnswer.addEventListener("input", leftCharacter);

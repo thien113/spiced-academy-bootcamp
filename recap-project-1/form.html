@@ -16,10 +16,13 @@
         <h2 id="form-heading">Question Form</h2>
         <p id="form-description">Create your own Questions!</p>
         <label for="question">Your Question</label>
-        <textarea type="text" name="question" id="question" rows="4">
-        </textarea>
+        <textarea type="text" name="question" id="question" rows="4"
+        maxlength="150" data-js="question"></textarea>
+        <p>150 Character/s left</p>
         <label for="answer">Your Answer</label>
-        <textarea type="text" name="answer" id="answer" rows="4"> </textarea>
+        <textarea type="text" name="answer" id="answer" rows="4" 
+        maxlength="150" data-js="answer"></textarea>
+        <p>150 Character/s left</p>
         <label for="tag">Your tags</label>
         <input type="text" name="tag" id="tag"> </input>
         <button type="submit">Submit</button>

@@ -13,7 +13,6 @@ form > h2 {
 form > button:hover {
   background-color: var(--accent-color);
 }
-
 form > textarea:focus,
 input:focus {
   outline: none !important;
