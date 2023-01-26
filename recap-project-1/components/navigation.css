@@ -25,3 +25,6 @@ nav {
 .bookmark.active {
   content: url("../assets/bookmark-2.svg");
 }
+.form.active {
+  content: url("../assets/form-white.svg");
+}

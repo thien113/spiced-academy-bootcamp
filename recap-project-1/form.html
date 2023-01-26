@@ -5,28 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="global.css" />
+    <script src="./index.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body>
     <main>
       <h1>Quizz App</h1>
-      <article>
-        <img src="./assets/candy monster.jpg" alt="profile" />
-        <h2>Hum-a-boo Spottybottom</h1>
-            <h3>About me</h3>
-            <p>Candy?..... CANDYYYYYYYYYYYYYYYYYYYYY!!</p>
-            <div class="label-group">
-                <label for="counter-question"><img src="./assets/question.svg" alt="question icon"><span>12</span></label>
-                <label for="counter-bookmark"><img src="./assets/bookmark.svg" alt="bookmark icon"><span>4</span></label>
-            </div>
-            <div class="dark-mode">
-                <h3>Dark Mode</h3>
-                <label class="switch">
-                    <input type="checkbox">
-                    <span></span>	  
-                </label>
-            </div>
-      </article>
+      <form aria-labelledby="form-heading" aria-describedby="form-description">
+        <h2 id="form-heading">Question Form</h2>
+        <p id="form-description">Create your own Questions!</p>
+        <label for="question">Your Question</label>
+        <textarea type="text" name="question" id="question" rows="4">
+        </textarea>
+        <label for="answer">Your Answer</label>
+        <textarea type="text" name="answer" id="answer" rows="4"> </textarea>
+        <label for="tag">Your tags</label>
+        <input type="text" name="tag" id="tag"> </input>
+        <button type="submit">Submit</button>
+      </form>
     </main>
     <nav>
       <a class="home" aria-label="open home tab" href="index.html"
@@ -40,18 +36,18 @@
         ><img src="./assets/bookmark.svg"
       /></a>
       <a
-        class="form"
+        class="form active"
         aria-label="open form tab"
         alt="form icon"
         href="form.html"
         ><img src="./assets/form.svg"
       /></a>
       <a
-        class="profile active"
+        class="profile"
         aria-label="open profile tab"
         alt="profile icon"
         href="profile.html"
-        ><img src="./assets/profile.svg" alt="profile icon"
+        ><img src="./assets/profile.svg"
       /></a>
     </nav>
   </body>

@@ -1,0 +1,22 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px;
+  gap: 20px;
+  color: var(--black-color);
+  font-weight: bold;
+}
+form > h2 {
+  color: var(--white-color);
+}
+form > button:hover {
+  background-color: var(--accent-color);
+}
+
+form > textarea:focus,
+input:focus {
+  outline: none !important;
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 0 10px #474747;
+}
