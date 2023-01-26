@@ -1,6 +1,5 @@
 // form handler
 const form = document.querySelector('[data-js="form"]');
-const main = document.querySelector('[data-js="main"]');
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -37,7 +36,6 @@ form.addEventListener("submit", (event) => {
   //appending logic
   ulEl.append(liEl);
   selectionEl.append(imgEl, h2El, buttonEl, spanEl, ulEl);
-  main.append(selectionEl);
 
   //reset the form after submit
   form.reset();
