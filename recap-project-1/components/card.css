@@ -40,3 +40,7 @@ section > ul > li {
 section > ul > li:before {
   content: "\0023";
 }
+
+.hidden {
+  display: none;
+}
