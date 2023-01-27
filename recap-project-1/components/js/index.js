@@ -7,9 +7,11 @@ function onChangeImage(objImg) {
     //setattribute src and alt
     objImg.setAttribute("src", "./assets/bookmark.svg");
     objImg.setAttribute("alt", "bookmarked");
+    return "isBookmarked";
   } else {
     objImg.setAttribute("src", "./assets/bookmark-2.svg");
     objImg.setAttribute("alt", "not bookmarked");
+    return "isNotBookmarked";
   }
 }
 
@@ -82,12 +84,17 @@ cardsArray.forEach(function (card) {
   const buttonEl = document.createElement("button");
   const spanEl = document.createElement("span");
   const ulEl = document.createElement("ul");
-  const liEl = document.createElement("li");
 
   // create all attritbute,function, for img
   imgEl.setAttribute("onmouseover", "this.style.cursor='pointer'");
-  imgEl.setAttribute("onclick", "onChangeImage(this)");
-
+  imgEl.addEventListener("click", () => {
+    let isbookMarked = onChangeImage(imgEl);
+    if (isbookMarked == "isBookMarked") {
+      card.isBookmarked = true;
+    } else {
+      card.isBookmarked = false;
+    }
+  });
   //create button with function
   buttonEl.setAttribute("onclick", "toggleAnswer(this)");
   buttonEl.textContent = "Show Answer";
@@ -103,11 +110,10 @@ cardsArray.forEach(function (card) {
     imgEl.setAttribute("alt", "bookmarked");
     imgEl.setAttribute("src", "./assets/bookmark-2.svg");
   }
+  //hashtags
   const tagsArray = card.tags;
-  tagsArray.forEach(function (tag) {
-    console.log("tagsArray:", tagsArray);
-    console.log("tag:", tag);
-    liEl.textContent = tag;
+  tagsArray.map((tag) => {
+    return;
   });
 
   //appending logic
@@ -115,3 +121,5 @@ cardsArray.forEach(function (card) {
   selectionEl.append(imgEl, h2El, buttonEl, spanEl, ulEl);
   main.append(selectionEl);
 });
+let lastSave = window.localStorage.setItem("cards", JSON.stringify(cardsArray));
+console.log("lastSave", lastSave);
