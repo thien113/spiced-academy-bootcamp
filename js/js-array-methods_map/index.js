@@ -1,5 +1,3 @@
-console.clear();
-
 const cards = [
   {
     id: "1",
@@ -26,12 +24,15 @@ const cards = [
 
 const lowerCaseAnswers = cards.map((card) => card.answer.toLowerCase()); // ['as often as you like.', ...]
 
-const questionsAndAnswersTogether = cards.map(
-  (card) => card.question + card.answer
-); // ["How often can I use <header>? - As often as you like.", ...]
+const questionsAndAnswersTogether = cards.map((card) => {
+  return `${card.question} - ${card.answer}`;
+}); // ["How often can I use <header>? - As often as you like.", ...]
 
 const questionAndAnswer = cards.map((card) => {
-  `question: ${card.question}, answer: ${card.answer}`;
+  return {
+    answer: `${card.answer}`,
+    question: `${card.question}`,
+  };
 }); // [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
 
 export { lowerCaseAnswers, questionsAndAnswersTogether, questionAndAnswer };
