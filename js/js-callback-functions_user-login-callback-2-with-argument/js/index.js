@@ -15,9 +15,11 @@ handleUserLogin(showWelcomeMessage);
 handleUserLogin(hide);
 
 //handerUserLogin passes a function with a parameter as a parameter
-handleUserLogin((userName) => {
-  console.log(`Welcome ${userName}! You are logged in now(arrow function).`);
-});
+handleUserLogin(
+  /*onSuccess*/ (userName) => {
+    console.log(`Welcome ${userName}! You are logged in now(arrow function).`);
+  }
+);
 
 /*
 anonymous function is called with no name and passes userName as parameter
