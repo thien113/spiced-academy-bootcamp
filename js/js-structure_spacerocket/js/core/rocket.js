@@ -20,6 +20,5 @@ export function getRocket() {
   if (!global.rocket) {
     throw new Error("No rocket found");
   }
-
   return global.rocket;
 }

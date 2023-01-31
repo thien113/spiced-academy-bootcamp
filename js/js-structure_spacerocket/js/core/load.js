@@ -11,6 +11,6 @@ export function loadPayload(satellite) {
   if (rocket.payload.length >= 2) {
     throw new Error(`Cannot load ${satellite.id}. Max payload reached.`);
   }
-
+  console.log("satellite.id: " + satellite.id);
   rocket.payload.push(satellite);
 }
