@@ -24,7 +24,7 @@ const animalStrings = [
 const hippoExists = animalStrings.includes("hippo");
 
 // Hint: You can pass the starting index as second parameter.
-const catStartingFromIndexFiveExists = animalStrings.indexOf("cat", 5);
+const catStartingFromIndexFiveExists = animalStrings.includes("cat", 5);
 
 // Hint: Besides the array method, check out the string method `startsWith()`.
 const firstAnimalStartingWithLetterP = animalStrings.find((animal) => {
@@ -41,20 +41,14 @@ const indexOfGiraffe = animalStrings.indexOf("giraffe");
 // Hint: There is no need to upper-/lowercase the strings before sorting them.
 // Hint: sort() mutates the original array, which is bad.
 // -> Use animals.slice().sort(...) to make a copy.
-const animalsSortedAlphabetically = animalStrings.slice().sort((a, b) => {
-  if (a > b) {
-    return 1;
-  } else {
-    return -1;
-  }
-});
+const animalsSortedAlphabetically = animalStrings.slice().sort();
 
 // Hint: Guess what? There is a string method called `endsWith()`.
 const anyAnimalEndsWithLetterZ = animalStrings.some((animal) =>
   animal.endsWith("z")
 );
 
-const everyAnimalHasMoreThanTwoLetters = animalStrings.filter(
+const everyAnimalHasMoreThanTwoLetters = animalStrings.every(
   (animal) => animal.length > 2
 );
 
