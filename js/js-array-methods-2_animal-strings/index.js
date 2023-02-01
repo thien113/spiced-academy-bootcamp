@@ -24,9 +24,7 @@ const animalStrings = [
 const hippoExists = animalStrings.includes("hippo");
 
 // Hint: You can pass the starting index as second parameter.
-const catStartingFromIndexFiveExists = animalStrings.findIndex((animal) =>
-  animal.includes("cat")
-);
+const catStartingFromIndexFiveExists = animalStrings.includes("cat");
 
 // Hint: Besides the array method, check out the string method `startsWith()`.
 const firstAnimalStartingWithLetterP = animalStrings.find((animal) =>
@@ -62,7 +60,7 @@ const everyAnimalHasMoreThanTwoLetters = animalStrings.filter(
 // Option 1: Concatenate all characters with `reduce()` and check for the `length` property of the result.
 // Option 2: Use `map()` to create an array with the length values of all strings,
 // 				then sum them up with `reduce()` (keyword: method chaining)
-const sumOfAllAnimalCharacters = animalStrings.reduce().length;
+const sumOfAllAnimalCharacters = animalStrings.reduce((a, b) => a + b).length;
 
 export {
   hippoExists,
