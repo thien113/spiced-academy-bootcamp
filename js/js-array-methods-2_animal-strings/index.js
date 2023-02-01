@@ -24,12 +24,12 @@ const animalStrings = [
 const hippoExists = animalStrings.includes("hippo");
 
 // Hint: You can pass the starting index as second parameter.
-const catStartingFromIndexFiveExists = animalStrings.includes("cat");
+const catStartingFromIndexFiveExists = animalStrings.indexOf("cat", 5);
 
 // Hint: Besides the array method, check out the string method `startsWith()`.
-const firstAnimalStartingWithLetterP = animalStrings.find((animal) =>
-  animal.startsWith("p")
-);
+const firstAnimalStartingWithLetterP = animalStrings.find((animal) => {
+  return animal.startsWith("p");
+});
 
 const indexOfGiraffe = animalStrings.indexOf("giraffe");
 
@@ -43,14 +43,16 @@ const indexOfGiraffe = animalStrings.indexOf("giraffe");
 // -> Use animals.slice().sort(...) to make a copy.
 const animalsSortedAlphabetically = animalStrings.slice().sort((a, b) => {
   if (a > b) {
-    return -1;
-  } else {
     return 1;
+  } else {
+    return -1;
   }
 });
 
 // Hint: Guess what? There is a string method called `endsWith()`.
-const anyAnimalEndsWithLetterZ = animalStrings.endsWith("z");
+const anyAnimalEndsWithLetterZ = animalStrings.some((animal) =>
+  animal.endsWith("z")
+);
 
 const everyAnimalHasMoreThanTwoLetters = animalStrings.filter(
   (animal) => animal.length > 2
@@ -60,8 +62,9 @@ const everyAnimalHasMoreThanTwoLetters = animalStrings.filter(
 // Option 1: Concatenate all characters with `reduce()` and check for the `length` property of the result.
 // Option 2: Use `map()` to create an array with the length values of all strings,
 // 				then sum them up with `reduce()` (keyword: method chaining)
-const sumOfAllAnimalCharacters = animalStrings.reduce((a, b) => a + b).length;
-
+const sumOfAllAnimalCharacters = animalStrings.reduce((a, b) => {
+  return a + b;
+}, "").length;
 export {
   hippoExists,
   catStartingFromIndexFiveExists,
