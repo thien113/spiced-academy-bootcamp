@@ -83,7 +83,7 @@ const firstAnimalStartingWithLetterG = animals.find((animal) => {
 });
 
 const indexOfAnimalWithNameLongerFive = animals.findIndex((animal) => {
-  animal.name.length > 5;
+  return animal.name.length > 5;
 });
 
 // Note:
