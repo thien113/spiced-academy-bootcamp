@@ -23,8 +23,9 @@ export async function fetchNewColor() {
       const response = await fetch(colorApiUrl);
       const data = await response.json();
       if (response.ok) {
+        console.log(data);
         const hex = data.hex.value;
-        const name = data.name.closest_named_hex;
+        const name = data.name.value;
         setColorToGuess(hex, name);
       } else {
         console.log("Bad Response!");
