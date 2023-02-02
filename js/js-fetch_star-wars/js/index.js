@@ -7,7 +7,7 @@ const EXAMPLE_DATA = {
   name: "Luke Skywalker",
   height: "172",
   mass: "77",
-  hairColor: "blond",
+  hair_color: "blond",
   skin_color: "fair",
   eye_color: "blue",
   birth_year: "19BBY",
@@ -41,6 +41,22 @@ fetchDataAndRender();
 
 // --v-- your code below this line --v--
 
-function fetchDataAndRender() {
-  fetch(); // ?
+async function fetchDataAndRender() {
+  try {
+    const response = await fetch("https://swapi.dev/api/people"); // ?
+    const data = await response.json();
+    if (response.ok) {
+      const cardsData = data.results;
+      console.log("cards array data: ", cardsData);
+      console.log("Typeof: ", typeof cardsData);
+      cardsData.forEach((card) => {
+        const starwarsCard = Card(card);
+        renderElement(starwarsCard);
+      });
+    } else {
+      console.log("Bad Response!");
+    }
+  } catch (error) {
+    console.log("Error:", error);
+  }
 }

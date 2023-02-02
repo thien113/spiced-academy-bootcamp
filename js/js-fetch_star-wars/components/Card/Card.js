@@ -19,5 +19,10 @@ export function Card(characterData) {
 
   card.append(birthYear);
 
+  const hairColor = document.createElement("p");
+  hairColor.textContent = `Haircolor: ${characterData.hair_color}`;
+
+  card.append(hairColor);
+
   return card;
 }
