@@ -47,8 +47,6 @@ async function fetchDataAndRender() {
     const data = await response.json();
     if (response.ok) {
       const cardsData = data.results;
-      console.log("cards array data: ", cardsData);
-      console.log("Typeof: ", typeof cardsData);
       cardsData.forEach((card) => {
         const starwarsCard = Card(card);
         renderElement(starwarsCard);
