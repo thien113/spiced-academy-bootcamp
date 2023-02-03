@@ -12,7 +12,7 @@ const person = {
   email: "jane@doe.com",
   phone: "12345",
 };
-export const { name, ...contact } = person;
+export const { age, ...contact } = person;
 
 // example: export const {value 1} = myObject;
 
@@ -21,7 +21,7 @@ export const { name, ...contact } = person;
 // all other items should go into a variable called "restOfList".
 
 const list = ["one", "two", "three", "four", "five"];
-export const [first, second, restOfList] = list;
+export const [first, second, ...restOfList] = list;
 
 // EXERCISE 3
 // a) The `add` function does not work because it needs an array as argument.

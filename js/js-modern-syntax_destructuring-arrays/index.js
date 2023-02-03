@@ -13,7 +13,7 @@ export const [name, price, quantity] = item;
 // Use array destructuring to extract the variables "firstNameOfChris", "lastNameOfChris" and "ageOfChris".
 
 const personChris = [12, "Chris", "Owen"];
-export const [ageOfChris, firstNameOfChris, lastNameOfChris] = personChris;
+export const { ageOfChris, firstNameOfChris, lastNameOfChris } = personChris;
 
 // EXERCISE 3
 // Use array destructuring to extract the variables "firstNameOfAlex" and "lastNameOfAlex".
@@ -27,18 +27,15 @@ export const [firstNameOfAlex, , lastNameOfAlex] = personAlex;
 // as variable called "lastName".
 
 const students = ["Christina", "Jon", "Alexandare"];
-export const [first, , last] = students;
+export const [, , last] = students;
 
 // EXERCISE 5
 // Use array destructuring to extract all of the names from this nested array.
 // Assign the given order of students to variables called "student1" to "student5".
 
 const nestedStudents = ["Chris", ["Ahmad", "Antigoni"], ["Toby", "Sam"]];
-export const {
-  student1,
-  students23: [student2, student3],
-  students45: [student4, student5],
-} = nestedStudents;
+export const [student1, [student2, student3], [student4, student5]] =
+  nestedStudents;
 
 // EXERCISE 6
 // Spread the values of the values array into the function call of the add function.
