@@ -4,7 +4,7 @@ import logo from "../img/logo.jpg";
 export default function Logo() {
   return (
     <a href="#">
-      <Image src={logo} alt="logo"></Image>;
+      <Image src={logo} alt="logo"></Image>
     </a>
   );
 }
