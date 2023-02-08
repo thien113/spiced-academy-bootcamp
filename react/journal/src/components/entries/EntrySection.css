@@ -1,0 +1,26 @@
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin: 50px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+article > h4 {
+  text-align: center;
+}
+
+article > p {
+  text-align: left;
+  width: 80%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

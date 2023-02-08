@@ -1,0 +1,30 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.entries {
+  color: var(--color-nemo);
+}
+
+.active {
+  background-color: var(--color-nemo);
+  padding: 4px 12px;
+  color: white;
+  border-radius: 50%;
+}
+
+.disabled {
+  background-color: var(--color-water-10);
+  color: var(--color-granited);
+  padding: 4px 12px;
+  text-align: center;
+  border-radius: 50%;
+}
+@media only screen and (min-width: 768px) {
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
