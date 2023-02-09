@@ -17,3 +17,9 @@
 .card--yellow {
   background-color: lightyellow;
 }
+.card--orange {
+  background-color: rgb(255, 223, 162);
+}
+.card--purple {
+  background-color: rgb(174, 3, 174);
+}
