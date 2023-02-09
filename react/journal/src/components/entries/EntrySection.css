@@ -24,3 +24,7 @@ article > p {
   flex-direction: row;
   justify-content: space-between;
 }
+
+svg {
+  cursor: pointer;
+}
