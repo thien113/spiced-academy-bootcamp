@@ -2,7 +2,9 @@ import { useState } from "react";
 import "./EntryForm.css";
 
 export default function EntryForm() {
+  let arrayLength = JSON.parse(localStorage.getItem("cards") || "[]");
   const [motto, setMotto] = useState({
+    id: arrayLength.length + 1,
     motto: "",
     notes: "",
     date: new Date(),
@@ -19,11 +21,17 @@ export default function EntryForm() {
     let cards = JSON.parse(localStorage.getItem("cards") || "[]");
     cards.push(motto);
     localStorage.setItem("cards", JSON.stringify(cards));
-    setMotto({ motto: "", notes: "", date: new Date(), star: false });
+    setMotto({
+      id: cards.length,
+      motto: "",
+      notes: "",
+      date: new Date(),
+      star: false,
+    });
   };
   return (
     <form onSubmit={handleSubmit}>
-      <label for="motto">Motto</label>
+      <label htmlFor="motto">Motto</label>
       <textarea
         onChange={handleChange}
         className="textarea"
@@ -33,7 +41,7 @@ export default function EntryForm() {
         cols="50"
         value={motto.motto}
       ></textarea>
-      <label for="notes">Notes</label>
+      <label htmlFor="notes">Notes</label>
       <textarea
         onChange={handleChange}
         name="notes"
