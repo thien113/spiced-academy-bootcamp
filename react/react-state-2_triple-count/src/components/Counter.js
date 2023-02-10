@@ -4,7 +4,7 @@ export default function Counter() {
   const [count, setCount] = useState(0);
 
   function handleIncrement() {
-    // i dont get it
+    // use callback function on setCount if we need the previous state
     setCount((prevCount) => prevCount + 1);
     setCount((prevCount) => prevCount + 1);
     setCount((prevCount) => prevCount + 1);
