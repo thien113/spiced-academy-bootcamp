@@ -3,12 +3,6 @@ import ColoredNumber from "./ColoredNumber";
 
 export default function Counter() {
   const [colorValue, setColorValue] = useState(0);
-  function addColorValue() {
-    setColorValue(colorValue + 1);
-  }
-  function subColorValue() {
-    setColorValue(colorValue - 1);
-  }
 
   return (
     <div className="counter">
@@ -19,7 +13,7 @@ export default function Counter() {
           type="button"
           className="counter__button"
           aria-label="increment count"
-          onClick={addColorValue}
+          onClick={() => setColorValue(colorValue + 1)}
         >
           +
         </button>
@@ -27,7 +21,7 @@ export default function Counter() {
           type="button"
           className="counter__button"
           aria-label="decrement count"
-          onClick={subColorValue}
+          onClick={() => setColorValue(colorValue - 1)}
         >
           -
         </button>
