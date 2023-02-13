@@ -7,7 +7,6 @@ export default function EntrySection({ setMotto }) {
   const cards = JSON.parse(localStorage.getItem("cards") || "[]");
   const favsCards = cards.filter((card) => card.star === true);
   const [isClicked, setIsClicked] = useState(false);
-  console.log("isClicked:", isClicked);
   function handleChangeBoolean(id) {
     //filter by card.id of array items
     const filteredCard = cards.find((card) => card.id === id);
@@ -54,11 +53,7 @@ export default function EntrySection({ setMotto }) {
               <h2>
                 <strong>"{card.motto}"</strong>
               </h2>
-              <Star
-                starType={card.star}
-                id={card.id}
-                handleChange={handleChangeBoolean}
-              />
+              <Star starType={card.star} id={card.id} />
             </div>
             <p>{card.notes}</p>
           </article>
