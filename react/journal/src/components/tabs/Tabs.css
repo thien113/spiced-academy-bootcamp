@@ -5,7 +5,6 @@
 }
 .entries {
   cursor: pointer;
-  color: var(--color-nemo);
 }
 
 .favs {
