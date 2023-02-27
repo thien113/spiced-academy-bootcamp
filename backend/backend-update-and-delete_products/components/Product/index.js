@@ -6,7 +6,7 @@ import Comments from "../Comments";
 import ProductForm from "../ProductForm";
 import { useState } from "react";
 
-export default function Product({ onSubmit }) {
+export default function Product({ onSubmit, onDelete }) {
   const router = useRouter();
   const { id } = router.query;
   const [isEditing, setisEditing] = useState(false);
@@ -35,6 +35,13 @@ export default function Product({ onSubmit }) {
         Edit
       </StyledButton>
       {isEditing && <ProductForm isEditing={isEditing} onSubmit={onSubmit} />}
+      <StyledButton
+        onClick={() => {
+          onDelete(id);
+        }}
+      >
+        Delete
+      </StyledButton>
       <StyledButton type="button" onClick={() => router.push("/")}>
         Back to all
       </StyledButton>

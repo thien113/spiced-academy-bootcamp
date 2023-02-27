@@ -33,6 +33,7 @@ export default function HomePage() {
       console.error(response.status);
     }
   }
+
   return (
     <>
       <Heading>
