@@ -14,6 +14,7 @@ export default async function handler(request, response) {
 
     response.status(200).json(product);
   }
+
   if (request.method === "POST") {
     try {
       const fishData = request.body;
@@ -21,6 +22,18 @@ export default async function handler(request, response) {
       await fish.save();
 
       response.status(201).json({ status: "Product created" });
+    } catch (error) {
+      console.log(error);
+      response.status(400).json({ error: error.message });
+    }
+  }
+
+  if (request.method === "PUT") {
+    try {
+      await Product.findByIdAndUpdate(id, {
+        $set: request.body,
+      });
+      response.status(200).json({ status: "Product successfully updated" });
     } catch (error) {
       console.log(error);
       response.status(400).json({ error: error.message });
