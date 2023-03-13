@@ -84,3 +84,151 @@ so I know what they value
 
 - [ ] create an inspirational text
 - [ ] include some close team picture
+
+---
+
+## User Story 2: Order Page
+
+## User Story 2.1: Category Filter
+
+### Value Proposition
+
+As a customer
+I want filter products by categories
+so I have a better overview
+
+### Description
+
+![The Order Page !](./img/user-story-2/tayst-user-story-2-order-page.png "Order Page")
+
+### Acceptance Criteria
+
+- [ ] Category filter is displayed and clicked will filter cards
+- [ ] products are displayed as filtered cards
+  - [ ] product image is displayed
+  - [ ] product name is displayed
+  - [ ] product description is displayed
+  - [ ] product price is displayed
+  - [ ] add button is displayed
+
+### Tasks
+
+- [ ] get categories with GET api
+- [ ] display categories in order
+- [ ] default category all with all items
+- [ ] write functionality for filter by categories and get items by category
+
+---
+
+## User Story 2.2: Cart Component
+
+### Value Proposition
+
+As a customer
+I want to see what I have ordered
+so I can add extras/notes for pickup/delivery and order with checkout
+
+### Description
+
+![The Order Page !](./img/user-story-2/tayst-user-story-2-order-page.png "Order Page")
+
+### Acceptance Criteria
+
+- [ ] cart sidebar is displayed
+  - [ ] product name and price is displayed
+  - [ ] a counter is displayed
+  - [ ] a add note input is displayed
+  - [ ] extra checkbox is displayed
+  - [ ] 2 checkboxes pick-up/delivery is displayed
+  - [ ] cost is displayed
+  - checkout button is displayed
+
+### Tasks
+
+- [ ] write cart component and accept items as props
+- [ ] save as array temporarily
+- [ ] show items with name, price, counter
+- [ ] under items it has checkbox to add extras
+- [ ] under items it has an input field for comments
+- [ ] checkbox for asap delivery
+- [ ] pre-order checkbox where people can set a time and date
+- [ ] payment methods
+  - [ ] googlepay/applepay
+  - [ ] paypal
+  - [ ] giro
+  - [ ] credit
+- [ ] display total sum
+- [ ] display Buy Button to redirect to checkout
+- [ ] checkbox for privacy policy required
+- [ ] checkbox for terms of conditions required
+
+---
+
+## User Story 2.3: Checkout Page
+
+### Value Proposition
+
+As a Customer I want to add my information and others
+so it can be delivered to me.
+
+### Description
+
+![The Checkout Page !](./img/user-story-2/tayst-user-story-2-checkout-page.png "Checkout Page")
+
+### Acceptance Criteria
+
+- [ ] A form to input customer info
+- [ ] A summary of my card
+- [ ] inside summary update possible
+- [ ] show total sum
+
+### Tasks
+
+- [ ] create Form
+- [ ] create api POST
+- [ ] create table for order and save it inside
+- [ ] create summary cart and show products extras
+- [ ] checkbox delivery type
+- [ ] checkbox online payment
+- [ ] toc and privacy policy
+- [ ] button buy redirect third party usage
+
+## User Story 2.4: Overview Page
+
+### Value Proposition
+
+As a customer I want to see a validation on my order with the approx time to deliver and my order. And where my order is right now.
+So I have a good user exp.
+
+### Description
+
+![The Overview Page !](./img/user-story-2/tayst-user-story-2-overview-page.png "Overview Page")
+
+### Acceptance Criteria
+
+- [ ] I see a map with the location of the restaurant, driver, and my home.
+- [ ] I see a summary of my order
+- [ ] I see a time when this its delivered
+
+### Tasks
+
+- [ ] receive order from db and display to page
+- [ ] write the geolocation function nd pass it for customer,driver and restaurant
+- [ ] write a random function for delivery time
+
+## User Story 3: Booking Page
+
+### Value Proposition
+
+As a customer I want to book a table
+so I don't have to call
+
+### Acceptance Criteria
+
+- [ ] I see a contact form
+
+### Tasks
+
+- [ ] create form
+- [ ] create collection reservation
+- [ ] show aprroval in frontend for now
