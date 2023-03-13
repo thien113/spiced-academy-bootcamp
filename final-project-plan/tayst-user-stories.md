@@ -12,10 +12,6 @@ As an potential customer
 I want to see a landingpage
 So that I have the most important information of the restaurant
 
-### Description
-
-![The Landingpage !](./img/user-story-1/tayst-user-story-1-landingpage.png "Landingpage")
-
 ### Acceptance Criteria
 
 - [ ] A Logo and a NavBar is shown at the top as a header component
@@ -44,10 +40,6 @@ as a potential customer
 I want to see a menu page
 so that I can decide beforehand what to order
 
-### Description
-
-![The Menu Page !](./img/user-story-1/tayst-user-story-1-menu-page.png "Menu Page")
-
 ### Acceptance Criteria
 
 - [ ] list all items by categories
@@ -71,10 +63,6 @@ As a potential customer
 I want to know about the restaurant/team
 so I know what they value
 
-### Description
-
-![The About Us Page !](./img/user-story-1/tayst-user-story-1-about-us-page.png "About Us Page")
-
 ### Acceptance Criteria
 
 - [ ] pictures of the restaurant/team
@@ -96,10 +84,6 @@ so I know what they value
 As a customer
 I want filter products by categories
 so I have a better overview
-
-### Description
-
-![The Order Page !](./img/user-story-2/tayst-user-story-2-order-page.png "Order Page")
 
 ### Acceptance Criteria
 
@@ -127,10 +111,6 @@ so I have a better overview
 As a customer
 I want to see what I have ordered
 so I can add extras/notes for pickup/delivery and order with checkout
-
-### Description
-
-![The Order Page !](./img/user-story-2/tayst-user-story-2-order-page.png "Order Page")
 
 ### Acceptance Criteria
 
@@ -171,10 +151,6 @@ so I can add extras/notes for pickup/delivery and order with checkout
 As a Customer I want to add my information and others
 so it can be delivered to me.
 
-### Description
-
-![The Checkout Page !](./img/user-story-2/tayst-user-story-2-checkout-page.png "Checkout Page")
-
 ### Acceptance Criteria
 
 - [ ] A form to input customer info
@@ -199,10 +175,6 @@ so it can be delivered to me.
 
 As a customer I want to see a validation on my order with the approx time to deliver and my order. And where my order is right now.
 So I have a good user exp.
-
-### Description
-
-![The Overview Page !](./img/user-story-2/tayst-user-story-2-overview-page.png "Overview Page")
 
 ### Acceptance Criteria
 
